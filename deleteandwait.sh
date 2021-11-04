@@ -42,5 +42,5 @@ function oc::wait::object::unavailability() {
 
 /usr/local/bin/oc create -f /tmp/delconfigmap.yaml
 
-oc::wait::object::unavailability "/usr/local/bin/oc get -n redhat-ods-applications postgres" 180 7200
+oc::wait::object::unavailability "/usr/local/bin/oc get -n redhat-ods-applications postgres jupyterhub-db-rds" 180 7200
 exit 0
